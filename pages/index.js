@@ -18,26 +18,31 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.buttonContainer}>
+        <div className={styles.button_container}>
           {projects.map((project, i) => {
             const encodedUrl = encodeUrl(project);
             return (
               <Link href={`/${encodedUrl}`} key={i}>
-                {project}
+                <a className={styles.link_to_project}>{project}</a>
               </Link>
             );
           })}
         </div>
-        <div>
-          <Link href='/space-tourisms'>
-          <Image
-          className={styles.image}
-            src="/assets/spaceTourisms/Desktop-Home.jpg"
-            alt="space tourism image"
-            height={500}
-            width={900}
-          />
-          </Link>
+        <div className={styles.carousel}>
+          {projects.map((project, i) => {
+            const encodedUrl = encodeUrl(project);
+            return (
+              <Link key={i} href={`/${encodedUrl}`}>
+                <Image
+                  className={styles.image}
+                  src="/assets/spaceTourisms/Desktop-Home.jpg"
+                  alt="space tourism image"
+                  height={400}
+                  width={700}
+                />
+              </Link>
+            );
+          })}
         </div>
       </main>
 

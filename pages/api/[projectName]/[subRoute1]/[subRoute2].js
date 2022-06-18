@@ -12,6 +12,7 @@ const handler = (req, res) => {
       if (filteredData.length) {
         return res.json({ [subRoute2]: filteredData[0] });
       }
+      res.status(404).json({ [subRoute1]: "No data found" });
     });
 };
 
