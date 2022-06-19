@@ -1,12 +1,12 @@
-const projects = (projectName = "spaceTourisms") => {
+const projects = (url = "") => {
   return {
-    spaceTourisms: {
+    SpaceTourisms: {
       destination: [
         {
           name: "Moon",
           images: {
-            png: "/assets/" + projectName + "/destination/image-moon.png",
-            webp: "/assets/" + projectName + "/destination/image-moon.webp",
+            png: url + "/assets/spaceTourisms/destination/image-moon.png",
+            webp: url + "/assets/spaceTourisms/destination/image-moon.webp",
           },
           description:
             "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
@@ -16,8 +16,8 @@ const projects = (projectName = "spaceTourisms") => {
         {
           name: "Mars",
           images: {
-            png: "/assets/" + projectName + "/destination/image-mars.png",
-            webp: "/assets/" + projectName + "/destination/image-mars.webp",
+            png: url + "/assets/spaceTourisms/destination/image-mars.png",
+            webp: url + "/assets/spaceTourisms/destination/image-mars.webp",
           },
           description:
             "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
@@ -27,8 +27,8 @@ const projects = (projectName = "spaceTourisms") => {
         {
           name: "Europa",
           images: {
-            png: "/assets/" + projectName + "/destination/image-europa.png",
-            webp: "/assets/" + projectName + "/destination/image-europa.webp",
+            png: url + "/assets/spaceTourisms/destination/image-europa.png",
+            webp: url + "/assets/spaceTourisms/destination/image-europa.webp",
           },
           description:
             "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
@@ -38,8 +38,8 @@ const projects = (projectName = "spaceTourisms") => {
         {
           name: "Titan",
           images: {
-            png: "/assets/" + projectName + "/destination/image-titan.png",
-            webp: "/assets/" + projectName + "/destination/image-titan.webp",
+            png: url + "/assets/spaceTourisms/destination/image-titan.png",
+            webp: url + "/assets/spaceTourisms/destination/image-titan.webp",
           },
           description:
             "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
@@ -51,8 +51,8 @@ const projects = (projectName = "spaceTourisms") => {
         {
           name: "Douglas Hurley",
           images: {
-            png: "/assets/" + projectName + "/crew/image-douglas-hurley.png",
-            webp: "/assets/" + projectName + "/crew/image-douglas-hurley.webp",
+            png: url + "/assets/spaceTourisms/crew/image-douglas-hurley.png",
+            webp: url + "/assets/spaceTourisms/crew/image-douglas-hurley.webp",
           },
           role: "Commander",
           bio: "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
@@ -60,9 +60,9 @@ const projects = (projectName = "spaceTourisms") => {
         {
           name: "Mark Shuttleworth",
           images: {
-            png: "/assets/" + projectName + "/crew/image-mark-shuttleworth.png",
+            png: url + "/assets/spaceTourisms/crew/image-mark-shuttleworth.png",
             webp:
-              "/assets/" + projectName + "/crew/image-mark-shuttleworth.webp",
+              url + "/assets/spaceTourisms/crew/image-mark-shuttleworth.webp",
           },
           role: "Mission Specialist",
           bio: "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
@@ -70,8 +70,8 @@ const projects = (projectName = "spaceTourisms") => {
         {
           name: "Victor Glover",
           images: {
-            png: "/assets/" + projectName + "/crew/image-victor-glover.png",
-            webp: "/assets/" + projectName + "/crew/image-victor-glover.webp",
+            png: url + "/assets/spaceTourisms/crew/image-victor-glover.png",
+            webp: url + "/assets/spaceTourisms/crew/image-victor-glover.webp",
           },
           role: "Pilot",
           bio: "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.",
@@ -79,8 +79,8 @@ const projects = (projectName = "spaceTourisms") => {
         {
           name: "Anousheh Ansari",
           images: {
-            png: "/assets/" + projectName + "/crew/image-anousheh-ansari.png",
-            webp: "/assets/" + projectName + "/crew/image-anousheh-ansari.webp",
+            png: url + "/assets/spaceTourisms/crew/image-anousheh-ansari.png",
+            webp: url + "/assets/spaceTourisms/crew/image-anousheh-ansari.webp",
           },
           role: "Flight Engineer",
           bio: "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.",
@@ -91,13 +91,11 @@ const projects = (projectName = "spaceTourisms") => {
           name: "Launch vehicle",
           images: {
             portrait:
-              "/assets/" +
-              projectName +
-              "/technology/image-launch-vehicle-portrait.jpg",
+              url +
+              "/assets/spaceTourisms/technology/image-launch-vehicle-portrait.jpg",
             landscape:
-              "/assets/" +
-              projectName +
-              "/technology/image-launch-vehicle-landscape.jpg",
+              url +
+              "/assets/spaceTourisms/technology/image-launch-vehicle-landscape.jpg",
           },
           description:
             "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
@@ -106,13 +104,11 @@ const projects = (projectName = "spaceTourisms") => {
           name: "Spaceport",
           images: {
             portrait:
-              "/assets/" +
-              projectName +
-              "/technology/image-spaceport-portrait.jpg",
+              url +
+              "/assets/spaceTourisms/technology/image-spaceport-portrait.jpg",
             landscape:
-              "/assets/" +
-              projectName +
-              "/technology/image-spaceport-landscape.jpg",
+              url +
+              "/assets/spaceTourisms/technology/image-spaceport-landscape.jpg",
           },
           description:
             "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.",
@@ -121,19 +117,23 @@ const projects = (projectName = "spaceTourisms") => {
           name: "Space capsule",
           images: {
             portrait:
-              "/assets/" +
-              projectName +
-              "/technology/image-space-capsule-portrait.jpg",
+              url +
+              "/assets/spaceTourisms/technology/image-space-capsule-portrait.jpg",
             landscape:
-              "/assets/" +
-              projectName +
-              "/technology/image-space-capsule-landscape.jpg",
+              url +
+              "/assets/spaceTourisms/technology/image-space-capsule-landscape.jpg",
           },
           description:
             "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
         },
       ],
-    },
+    }
+  //   ,
+  //   ImageUploader: {
+  //     images: {
+  //       url: "localhost",
+  //     },
+  //   },
   };
 };
 

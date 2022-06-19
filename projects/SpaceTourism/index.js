@@ -31,7 +31,7 @@ const SpaceTourism = () => {
             </p>
           </div>
 
-          <Link href="/space-tourisms/destination/moon">
+          <Link href="/Space Tourisms/destination/Moon">
             <div className={styles.explore}>Explore </div>
           </Link>
         </div>
